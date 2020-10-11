@@ -1,0 +1,153 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 400px,
+  //use custom breakepoint
+  md: 800px,
+  //use custom breakepoint
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1900px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1610px,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// user buttons on main page and add user button styles
+.loadedcarts,
+.fornewcart {
+  display: flex;
+  justify-content: center;
+  width: 15em;
+}
+
+.loadedcarts button,
+.fornewcart button {
+  width: 09em;
+  height: 09em;
+  padding: 0;
+  margin: 1em;
+}
+
+.fornewcart button {
+  position: relative;
+  z-index: 1;
+}
+
+.addUserBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  font-size: 7em;
+  flex-direction: row;
+  flex-basis: 80px;
+  height: 190px;
+  width: 180px;
+}
+
+.loadedcarts button img {
+  width: 09em;
+  height: 09em;
+}
+
+// pagination styles
+.paginator {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.paginator span {
+  padding-right: 1em;
+}
+
+.selectedPage {
+  font-weight: 900;
+}
+
+// modal window style
+.modalSkin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1000;
+  width: 40em;
+  height: 40em;
+  border-radius: 0.3em;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+  outline: none;
+}
+
+.closeBtn button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.modalWraper {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  height: 8.5em;
+  align-items: flex-end;
+}
+
+.modalAvatar img {
+  width: 15em;
+}
+
+.yourAvatar {
+  font-size: 10em;
+}
+
+.modalAvatar {
+  min-height: 15em;
+  width: 15em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.modalInput .input input {
+  margin-bottom: 0.5em;
+}
+
+.labelInput {
+  margin-left: 1em;
+}
